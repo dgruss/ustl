@@ -107,9 +107,9 @@ void memblock::shrink_to_fit (void)
 {
     if (is_linked())
 	return;
-    pointer newBlock = (pointer) realloc (begin(), size());
+    pointer newBlock = (pointer) krealloc (begin(), size());
     if (!newBlock && size())
-	throw bad_alloc (size());
+      kpanict((uint8_t*)"bad_alloc");
     _capacity = size();
     memlink::relink (newBlock, size());
 }

@@ -22,11 +22,11 @@
 #endif
 #if HAVE_SYS_TYPES_H
     #include <sys/types.h>
-#endif*/
+#endif
 #include <stddef.h>		// For ptrdiff_t, size_t
 #include <limits.h>
 #include <float.h>
-#include <unistd.h>
+#include <unistd.h>*/
 #ifndef SIZE_MAX
     #define SIZE_MAX		UINT_MAX
 #endif
