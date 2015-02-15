@@ -67,7 +67,7 @@ public:
     void		fill (const_iterator start, const void* p, size_type elsize, size_type elCount = 1) noexcept;
     inline void		insert (const_iterator start, size_type size);
     inline void		erase (const_iterator start, size_type size);
-    void		read (istream& is);
+    //void		read (istream& is);
 };
 
 /// Shifts the data in the linked block from \p start to \p start + \p n.

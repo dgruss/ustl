@@ -9,9 +9,9 @@
 /// The ustl namespace contains all ustl classes and algorithms.
 namespace ustl {
 
-class istream;
-class ostream;
-class ostringstream;
+//class istream;
+//class ostream;
+//class ostringstream;
 
 /// \class cmemlink cmemlink.h ustl.h
 /// \ingroup MemoryManagement
@@ -70,11 +70,8 @@ public:
     inline iterator	iat (size_type i) const		{ assert (i <= size()); return begin() + i; }
     inline iterator	end (void) const		{ return iat (size()); }
     inline void		resize (size_type n)		{ _size = n; }
-    inline void		read (istream&)			{ assert (!"ustl::cmemlink is a read-only object."); }
-    void		write (ostream& os) const;
+
     size_type		stream_size (void) const noexcept;
-    void		text_write (ostringstream& os) const;
-    void		write_file (const char* filename, int mode = 0644) const;
 private:
     const_pointer	_data;		///< Pointer to the data block (const)
     size_type		_size;		///< size of the data block

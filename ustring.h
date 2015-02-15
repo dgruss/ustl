@@ -199,8 +199,8 @@ public:
     inline size_type		find_last_not_of (const_pointer p, size_type pos, size_type count) const	{ string sp; sp.link (p,count); return find_last_not_of (sp, pos); }
     int				vformat (const char* fmt, va_list args);
     int				format (const char* fmt, ...) __attribute__((__format__(__printf__, 2, 3)));
-    void			read (istream&);
-    void			write (ostream& os) const;
+    //void			read (istream&);
+    //void			write (ostream& os) const;
     size_t			stream_size (void) const noexcept;
     static hashvalue_t		hash (const char* f1, const char* l1) noexcept;
 #if HAVE_CPP11

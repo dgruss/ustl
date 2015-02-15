@@ -115,10 +115,6 @@ public:
 			    { transform (begin(), end(), v.begin(), begin(), bitwise_or<value_type>()); return *this; }
     inline rcself_t	operator^= (rcself_t v)
 			    { transform (begin(), end(), v.begin(), begin(), bitwise_xor<value_type>()); return *this; }
-    inline void		read (istream& is)			{ nr_container_read (is, *this); }
-    inline void		write (ostream& os) const		{ nr_container_write (os, *this); }
-    inline void		text_write (ostringstream& os) const	{ os << to_string(); }
-    inline size_t	stream_size (void) const		{ return sizeof(_bits); }
 private:
     value_type		_bits [s_nWords];
 };

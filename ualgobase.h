@@ -5,7 +5,7 @@
 
 #pragma once
 #include "uutility.h"
-#include <string.h>
+#include <kstring.h>
 
 namespace ustl {
 

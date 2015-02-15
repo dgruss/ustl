@@ -5,7 +5,6 @@
 
 #pragma once
 #include "memlink.h"
-#include "uexception.h"
 #include "strmsize.h"
 #include "utf8.h"
 #include "uios.h"
@@ -91,7 +90,7 @@ public:
     streamsize		readsome (void* s, streamsize n);
     inline void		read (istream&)			{ }
     void		write (ostream& os) const;
-    void		text_write (ostringstream& os) const;
+    //void		text_write (ostringstream& os) const;
     inline streamsize	stream_size (void) const	{ return remaining(); }
     template <typename T>
     inline void		iread (T& v);

@@ -5,7 +5,6 @@
 
 #pragma once
 #include "memlink.h"
-#include "uexception.h"
 #include "utf8.h"
 #include "uios.h"
 #include "strmsize.h"
@@ -71,7 +70,7 @@ public:
     void		write_strz (const char* str);
     void		read (istream& is);
     inline void		write (ostream& os) const	{ os.write (begin(), pos()); }
-    void		text_write (ostringstream& os) const;
+    //void		text_write (ostringstream& os) const;
     inline size_t	stream_size (void) const	{ return pos(); }
     void		insert (iterator start, streamsize size);
     void		erase (iterator start, streamsize size);

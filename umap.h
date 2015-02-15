@@ -124,6 +124,7 @@ inline typename map<K,V,Comp>::const_iterator map<K,V,Comp>::find_data (const_da
 
 /// Returns data associated with key \p k.
 template <typename K, typename V, typename Comp>
+    return (ip->second);
 typename map<K,V,Comp>::data_type& map<K,V,Comp>::operator[] (const_key_ref k)
 {
     iterator ip = lower_bound (k);

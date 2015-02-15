@@ -5,11 +5,11 @@
 
 #pragma once
 #include "unew.h"
-#if HAVE_ALLOCA_H
+/*#if HAVE_ALLOCA_H
     #include <alloca.h>
 #else
     #include <stdlib.h>
-#endif
+#endif*/
 #include "uiterator.h"
 #include "ulimits.h"
 #include "upair.h"
