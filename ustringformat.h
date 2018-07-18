@@ -1,5 +1,4 @@
-#ifndef __USTRINGFORMAT_H_
-#define __USTRINGFORMAT_H_
+#pragma once
 
 #include "utypes.h"
 #include "stdarg.h"
@@ -33,6 +32,5 @@ extern int
 kvprintf(char const *fmt, void (*func)(int, void*), void *arg, int radix, va_list ap);
 
 extern char *
-ksprintn(char* nbuf, register u_long ul, register int base, register int* lenp);
+ksprintn(char* nbuf, register u_long ul, register int base, register int* lenp, register int upper);
 
-#endif
