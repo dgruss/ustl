@@ -27,9 +27,9 @@ public:
     typedef const_pointer				const_iterator;
     typedef ::ustl::reverse_iterator<iterator>		reverse_iterator;
     typedef ::ustl::reverse_iterator<const_iterator>	const_reverse_iterator;
-    typedef std::initializer_list<value_type>		initlist_t;
 public:
 #if HAVE_CPP11
+    using initlist_t = std::initializer_list<value_type>;
     inline array&		operator+= (initlist_t v)		{ for (size_type i = 0; i < N; ++i) _v[i] += v.begin()[i]; return *this; }
     inline array&		operator-= (initlist_t v)		{ for (size_type i = 0; i < N; ++i) _v[i] -= v.begin()[i]; return *this; }
     inline array&		operator*= (initlist_t v)		{ for (size_type i = 0; i < N; ++i) _v[i] *= v.begin()[i]; return *this; }

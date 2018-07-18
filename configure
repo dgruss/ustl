@@ -6,7 +6,7 @@
 ######################################################################
 
 PKG_NAME="ustl"
-PKG_VERSTR="v2.2"
+PKG_VERSTR="v2.6"
 
 PKG_BUGREPORT="Mike Sharov <msharov@users.sourceforge.net>"
 
@@ -23,7 +23,6 @@ PKG_STRING="$PKG_NAME $PKG_VERSTR"
 CUSTSUBS="s/@PKG_NAME@/$PKG_NAME/g
 s/@PKG_VERSION@/"0x$PKG_MAJOR${PKG_MINOR}0"/g
 s/@PKG_VERSTR@/$PKG_VERSTR/g
-s/@PKG_TARNAME@/$PKG_NAME/g
 s/@PKG_STRING@/$PKG_STRING/g
 s/@PKG_UNAME@/`echo $PKG_NAME|tr a-z A-Z`/g
 s/@PKG_BUGREPORT@/$PKG_BUGREPORT/g
